@@ -1,82 +1,74 @@
 @import "_color";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-}
-html , body{
-    height: 100%;
-    width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
-img{
-    max-width: 100%;
-    height: auto;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-.navbar, .hero-section{
-    background-color: $Neutral-Silver;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-.mybtn{
-    cursor: pointer;
-    border-radius: 4px;
-    background-color: $p-green;
-    color: $white;
-    border: none;
+.header, .slider-section {
+  background: $Neutral-Silver;
 }
 
-// .mybtn:hover{
-//     background-color: $Neutral-Grey;
-// }
-
-.signup{
-    width: 91px;
-    height: 40px;
+.ul{
+    gap: 50px;
 }
 
-.left{
-    h1{
-        width: 657px;
-        height: 152px;
-        font-weight: 600;
-        font-size: 64px;
-        color: $Neutral-D_Grey;
-    }
-    span{
-        color: $p-green;
-    }
-    p{
-        width: 657px;
-        height: 24px;
-        font-weight: 400;
-        font-size: 16px;
-        color: $Neutral-Grey;
-    }
-    button{
-        width: 128px;
-        height: 52px;
-
-    }
+.mybtn {
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: $p-green;
+  color: $white;
+  border: none;
 }
 
-.right{
-    padding: 96px 0px;
+.signup {
+  width: 91px;
+  height: 40px;
+}
+
+.register {
+  width: 128px;
+  height: 52px;
+}
+
+.left {
+  h1 {
+    font-size: 64px;
+    line-height: 76px;
+    color: $Neutral-D_Grey;
+  }
+
+  span {
+    color: $p-green;
+  }
+
+  p {
+    line-height: 24px;
+    color: $Neutral-Grey;
+  }
 }
 
 .slick-dots {
-    position: static;
+    position: static !important;
 }
-
 .slick-dots li button:before {
-    color: $p-green;
+  color: $p-green !important;
 }
 
 .slick-dots li.slick-active button:before {
-    opacity: .75;
-    color:  $p-green;
+  opacity: 0.75;
+  color: $p-green !important;
 }
-
-

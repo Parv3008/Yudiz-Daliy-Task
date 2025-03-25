@@ -5,7 +5,8 @@
   font-family: "Inter", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -15,8 +16,12 @@ img {
   height: auto;
 }
 
-.navbar, .hero-section {
-  background-color: #F5F7FA;
+.header, .slider-section {
+  background: #F5F7FA;
+}
+
+.ul {
+  gap: 50px;
 }
 
 .mybtn {
@@ -32,41 +37,33 @@ img {
   height: 40px;
 }
 
+.register {
+  width: 128px;
+  height: 52px;
+}
+
 .left h1 {
-  width: 657px;
-  height: 152px;
-  font-weight: 600;
   font-size: 64px;
+  line-height: 76px;
   color: #4D4D4D;
 }
 .left span {
   color: #4CAF4F;
 }
 .left p {
-  width: 657px;
-  height: 24px;
-  font-weight: 400;
-  font-size: 16px;
+  line-height: 24px;
   color: #717171;
-}
-.left button {
-  width: 128px;
-  height: 52px;
-}
-
-.right {
-  padding: 96px 0px;
 }
 
 .slick-dots {
-  position: static;
+  position: static !important;
 }
 
 .slick-dots li button:before {
-  color: #4CAF4F;
+  color: #4CAF4F !important;
 }
 
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
-  color: #4CAF4F;
+  color: #4CAF4F !important;
 }/*# sourceMappingURL=main.css.map */
