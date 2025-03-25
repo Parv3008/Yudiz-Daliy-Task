@@ -1,0 +1,82 @@
+@import "_color";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar, .hero-section{
+    background-color: $Neutral-Silver;
+}
+
+.mybtn{
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: $p-green;
+    color: $white;
+    border: none;
+}
+
+// .mybtn:hover{
+//     background-color: $Neutral-Grey;
+// }
+
+.signup{
+    width: 91px;
+    height: 40px;
+}
+
+.left{
+    h1{
+        width: 657px;
+        height: 152px;
+        font-weight: 600;
+        font-size: 64px;
+        color: $Neutral-D_Grey;
+    }
+    span{
+        color: $p-green;
+    }
+    p{
+        width: 657px;
+        height: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $Neutral-Grey;
+    }
+    button{
+        width: 128px;
+        height: 52px;
+
+    }
+}
+
+.right{
+    padding: 96px 0px;
+}
+
+.slick-dots {
+    position: static;
+}
+
+.slick-dots li button:before {
+    color: $p-green;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color:  $p-green;
+}
+
+
