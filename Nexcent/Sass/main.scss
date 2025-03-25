@@ -18,12 +18,21 @@ img {
   height: auto;
 }
 
-.header, .slider-section {
+.navbar, .slider-section {
   background: $Neutral-Silver;
+}
+
+.nav-container{
+    padding-top: 22px;
+    padding-bottom: 22px;
 }
 
 .ul{
     gap: 50px;
+}
+
+.button{
+    gap: 14px;
 }
 
 .mybtn {
@@ -42,6 +51,16 @@ img {
 .register {
   width: 128px;
   height: 52px;
+}
+
+.slider-section{
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
 }
 
 .left {
@@ -63,6 +82,7 @@ img {
 
 .slick-dots {
     position: static !important;
+
 }
 .slick-dots li button:before {
   color: $p-green !important;
@@ -72,3 +92,22 @@ img {
   opacity: 0.75;
   color: $p-green !important;
 }
+
+.client{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.client-text{
+    padding-bottom: 16px;
+    h2{
+        color: $Neutral-D_Grey;
+        font-weight: 600;
+        font-size: 36px;
+    }
+    p{
+        color: $Neutral-Grey;
+    }
+}
+
+

@@ -16,12 +16,21 @@ img {
   height: auto;
 }
 
-.header, .slider-section {
+.navbar, .slider-section {
   background: #F5F7FA;
+}
+
+.nav-container {
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
 
 .ul {
   gap: 50px;
+}
+
+.button {
+  gap: 14px;
 }
 
 .mybtn {
@@ -40,6 +49,16 @@ img {
 .register {
   width: 128px;
   height: 52px;
+}
+
+.slider-section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
 }
 
 .left h1 {
@@ -66,4 +85,21 @@ img {
 .slick-dots li.slick-active button:before {
   opacity: 0.75;
   color: #4CAF4F !important;
+}
+
+.client {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.client-text {
+  padding-bottom: 16px;
+}
+.client-text h2 {
+  color: #4D4D4D;
+  font-weight: 600;
+  font-size: 36px;
+}
+.client-text p {
+  color: #717171;
 }/*# sourceMappingURL=main.css.map */
