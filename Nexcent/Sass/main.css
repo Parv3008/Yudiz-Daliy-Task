@@ -102,4 +102,153 @@ img {
 }
 .client-text p {
   color: #717171;
+}
+
+.community {
+  padding-bottom: 42px;
+}
+
+.community-text {
+  padding-bottom: 16px;
+}
+.community-text h2 {
+  width: 542px;
+  height: 88px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4D4D4D;
+}
+.community-text p {
+  color: #717171;
+}
+
+.card-body h3 {
+  width: 231px;
+  height: 72px;
+  font-weight: 700;
+  font-size: 28px;
+}
+.card-body p {
+  width: 251px;
+  height: 60px;
+}
+
+.cards {
+  box-shadow: rgba(171, 190, 209, 0.2) 0px 2px 4px 0px;
+  width: 299px;
+  height: 260px;
+}
+
+.unlock {
+  padding-bottom: 48px;
+}
+
+.unlock-text {
+  width: 661px;
+  height: 268px;
+  padding-right: 60px;
+}
+.unlock-text h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #4D4D4D;
+}
+.unlock-text p {
+  font-size: 14px;
+  font-weight: 400;
+  height: 80px;
+  color: #717171;
+}
+
+.learn {
+  width: 151px;
+  height: 52px;
+  margin-top: 32px;
+}
+
+.Achievements {
+  background-color: #F5F7FA;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.Achievements-text h2 {
+  width: 408px;
+  height: 88px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+}
+.Achievements-text span {
+  color: #4CAF4F;
+}
+
+.count-container {
+  width: 540px;
+  height: 160px;
+}
+
+.count-container1 {
+  padding-bottom: 40px;
+  gap: 30px;
+}
+
+.count-container2 {
+  gap: 30px;
+}
+
+.count-items {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.count-text {
+  width: 191px;
+  height: 60px;
+}
+.count-text h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.design {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.design-text {
+  width: 601px;
+}
+.design-text h2 {
+  font-weight: 600;
+  font-size: 36px;
+}
+.design-text p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.Customers {
+  background-color: #F5F7FA;
+}
+
+.customer-text {
+  width: 748px;
+}
+.customer-text p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #717171;
+}
+.customer-text h4 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #4CAF4F;
+}
+.customer-text span {
+  font-weight: 400;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
