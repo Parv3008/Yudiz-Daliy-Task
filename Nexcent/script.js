@@ -35,8 +35,8 @@ cardData.map((card) => {
                       <button class="mybtn register">Register</button>
 
                   </div>
-                  <div class=" col-md-12 col-lg-5 pt-xs-0">
-                      <img src="${card.imageUrl}" alt="" class="img-fluid" id="my-Image">
+                  <div class="slider-img col-md-12 col-lg-5 pt-xs-0">
+                      <img src="${card.imageUrl}" alt="" id="my-Image mx-auto">
                   </div>
               </div>
       `;
