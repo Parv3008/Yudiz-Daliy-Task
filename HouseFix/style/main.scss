@@ -39,9 +39,32 @@ main{margin-top: 74px + 36px;}
 
 .left{h1{@include h1; font-weight: 800; color: $shade-0;padding-bottom: 40px;} p{@include p1; font-weight: 400; color: $shade-0; padding-bottom: 40px;}.request{@include mybtn; @include p1; padding: 20px 40px; font-weight: 700;} .price{@include p1; padding: 20px 40px; font-weight: 700; border: 2px solid $primary-500; background-color: transparent; color: $shade-0; border-radius: 4px;}.request{margin-right: 20px;}}
 
+.service{padding-top: 80px; padding-bottom: 80px;}
+
+.service-text{a{@include h5; font-weight: 600; color: $primary-500;} h1{@include h1-small; font-weight: 700; color: $primary-800;}}
+
+.service-text{h1{padding-top: 20px; padding-bottom: 40px;}}
+
+.service-card{padding: 0 0; width: 368px;}
+
+.card-row{gap: 24px;}
+
+.service-card{padding: 0 0; width: 368px;}
+
+.card-body{background-color: $primary-50;  border-bottom: 4px solid $primary-300; padding: 20px; h4{@include h4-small; font-weight: 700; color: $neutral-900; padding: 20px 0px;} p{@include p3; font-weight: 400; color: $primary-800; padding-bottom: 20px;} a{@include p1; font-weight: 700; color: $primary-800;}}
+
+
+
+
+
+
+
+
+
 @media (min-width:320px) and (max-width:767px){
     .top-nav{display: none;}
     .navbar{margin-top: 0px;}
+    main{margin-top: 74px;}
 }
 
 @media(min-width:768px) and (max-width:991px){

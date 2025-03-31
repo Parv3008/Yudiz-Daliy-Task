@@ -45,80 +45,82 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container nav-container">
                 <a href="#"><img src="assest/Logo.svg"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav gap-3 d-flex align-items-center">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Home
-                                <img src="assest/Arrow Down.svg" alt="">
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Blog
-                                <img src="assest/Arrow Down.svg" alt="">
-
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Pages
-                                <img src="assest/Arrow Down.svg" alt="">
-
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Contact Us
-                                <img src="assest/Arrow Down.svg" alt="">
-
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="d-flex">
-                            <button class="call-btn">Schedule a Call</button>
-                        </li>
-                    </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <ul class="navbar-nav gap-3 d-flex align-items-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                    <img src="assest/Arrow Down.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Blog
+                                    <img src="assest/Arrow Down.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Pages
+                                    <img src="assest/Arrow Down.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Contact Us
+                                    <img src="assest/Arrow Down.svg" alt="">
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="d-flex">
+                                <button class="call-btn">Schedule a Call</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -142,6 +144,79 @@
                         <img src="assest/hero-img.png" alt="">
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="container">
+                <div class="service-text text-center">
+                    <a href="#">Services We Provide</a>
+                    <img src="assest/Right Arrow.svg" alt="">
+                    <h1>The Best Plumbing Service & Maintanence</h1>
+                </div>
+                <div class="row card-row">
+                    <div class="service-card col-lg-4 col-md-6 col-sm-12 mx-auto">
+                        <img src="assest/p1.jpg" alt="">
+                        <div class="card-body">
+                            <img src="assest/Pipe-Installation.svg" alt="">
+                            <h4>Plumbing Installation</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Adipiscing quis ornare hac convallis a diam gravida in. Ac in tempus leo dolor nisl donec erat consequat.</p>
+                            <a href="#">Learn More</a>
+                            <img src="assest/Right Arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-card col-lg-4 col-md-6 col-sm-12 mx-auto">
+                        <img src="assest/p1.jpg" alt="">
+                        <div class="card-body">
+                            <img src="assest/Pipe-Installation.svg" alt="">
+                            <h4>Plumbing Installation</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Adipiscing quis ornare hac convallis a diam gravida in. Ac in tempus leo dolor nisl donec erat consequat.</p>
+                            <a href="#">Learn More</a>
+                            <img src="assest/Right Arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-card col-lg-4 col-md-6 col-sm-12 mx-auto">
+                        <img src="assest/p1.jpg" alt="">
+                        <div class="card-body">
+                            <img src="assest/Pipe-Installation.svg" alt="">
+                            <h4>Plumbing Installation</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Adipiscing quis ornare hac convallis a diam gravida in. Ac in tempus leo dolor nisl donec erat consequat.</p>
+                            <a href="#">Learn More</a>
+                            <img src="assest/Right Arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-card col-lg-4 col-md-6 col-sm-12 mx-auto">
+                        <img src="assest/p1.jpg" alt="">
+                        <div class="card-body">
+                            <img src="assest/Pipe-Installation.svg" alt="">
+                            <h4>Plumbing Installation</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Adipiscing quis ornare hac convallis a diam gravida in. Ac in tempus leo dolor nisl donec erat consequat.</p>
+                            <a href="#">Learn More</a>
+                            <img src="assest/Right Arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-card col-lg-4 col-md-6 col-sm-12 mx-auto">
+                        <img src="assest/p1.jpg" alt="">
+                        <div class="card-body">
+                            <img src="assest/Pipe-Installation.svg" alt="">
+                            <h4>Plumbing Installation</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Adipiscing quis ornare hac convallis a diam gravida in. Ac in tempus leo dolor nisl donec erat consequat.</p>
+                            <a href="#">Learn More</a>
+                            <img src="assest/Right Arrow.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="service-card col-lg-4 col-md-6 col-sm-12 mx-auto">
+                        <img src="assest/p1.jpg" alt="">
+                        <div class="card-body">
+                            <img src="assest/Pipe-Installation.svg" alt="">
+                            <h4>Plumbing Installation</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. Adipiscing quis ornare hac convallis a diam gravida in. Ac in tempus leo dolor nisl donec erat consequat.</p>
+                            <a href="#">Learn More</a>
+                            <img src="assest/Right Arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+        
             </div>
         </section>
     </main>

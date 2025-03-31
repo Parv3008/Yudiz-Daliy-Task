@@ -152,11 +152,77 @@ main {
   margin-right: 20px;
 }
 
+.service {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.service-text a {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #2196F3;
+}
+.service-text h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #00296C;
+}
+
+.service-text h1 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.service-card {
+  padding: 0 0;
+  width: 368px;
+}
+
+.card-row {
+  gap: 24px;
+}
+
+.service-card {
+  padding: 0 0;
+  width: 368px;
+}
+
+.card-body {
+  background-color: #F4F8FF;
+  border-bottom: 4px solid #9BC1FF;
+  padding: 20px;
+}
+.card-body h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #11141B;
+  padding: 20px 0px;
+}
+.card-body p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #00296C;
+  padding-bottom: 20px;
+}
+.card-body a {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #00296C;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .top-nav {
     display: none;
   }
   .navbar {
     margin-top: 0px;
+  }
+  main {
+    margin-top: 74px;
   }
 }/*# sourceMappingURL=main.css.map */
