@@ -87,6 +87,9 @@ button:hover {
   font-weight: 600;
   font-size: 14px;
 }
+.navbar-nav a:hover {
+  color: #2196F3;
+}
 
 .dropdown-toggle::after {
   display: none;
@@ -147,4 +150,13 @@ main {
 }
 .left .request {
   margin-right: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-nav {
+    display: none;
+  }
+  .navbar {
+    margin-top: 0px;
+  }
 }/*# sourceMappingURL=main.css.map */
