@@ -35,7 +35,7 @@ button:hover{background-color: $primary-700;}
 
 main{margin-top: 74px + 36px;}
 
-.hero-section{background-image: url("B:/Yudiz/HTML and CSS/HouseFix/assest/img/hero-bg.jpeg");background-repeat: no-repeat; background-size: cover;}
+.hero-section{background-image: url("../img/hero-bg.jpeg"); background-repeat: no-repeat; background-size: cover;}
 
 .left{h1{@include h1; font-weight: 800; color: $shade-0;padding-bottom: 40px;} p{@include p1; font-weight: 400; color: $shade-0; padding-bottom: 40px;}.request{@include mybtn; @include p1; padding: 20px 40px; font-weight: 700;} .price{@include p1; padding: 20px 40px; font-weight: 700; border: 2px solid $primary-500; background-color: transparent; color: $shade-0; border-radius: 4px;}.request{margin-right: 20px;}}
 

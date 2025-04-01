@@ -108,7 +108,7 @@ main {
 }
 
 .hero-section {
-  background-image: url("B:/Yudiz/HTML and CSS/HouseFix/assest/img/hero-bg.jpeg");
+  background-image: url("../img/hero-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
