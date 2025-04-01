@@ -11,9 +11,11 @@ img{max-width: 100%; height: auto;}
 
 a{text-decoration: none;}
 
+li{list-style: none;}
+
 h1,h2,h3,h4,h5{font-family: "Manrope", sans-serif;}
 
-button:hover{background-color: $primary-700;}
+button:hover{background-color: $primary-700; transition: 0.4s all;  }
 
 .navbar{position: fixed; top: 0; z-index: 1000; width: 100%; background-color: $shade-0; padding: 16px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-top: 36px;}
 
@@ -31,13 +33,17 @@ button:hover{background-color: $primary-700;}
 
 .navbar-toggler-icon {background-image: url("/assest/img/menu-icon.svg");}
 
-.navbar-toggler:hover {background-color: $shade-0;}
+.navbar-toggler:hover {background-color: $shade-0; transition: 0.4s all;}
 
 main{margin-top: 74px + 36px;}
 
 .hero-section{background-image: url("../img/hero-bg.jpeg"); background-repeat: no-repeat; background-size: cover;}
 
 .left{h1{@include h1; font-weight: 800; color: $shade-0;padding-bottom: 40px;} p{@include p1; font-weight: 400; color: $shade-0; padding-bottom: 40px;}.request{@include mybtn; @include p1; padding: 20px 40px; font-weight: 700;} .price{@include p1; padding: 20px 40px; font-weight: 700; border: 2px solid $primary-500; background-color: transparent; color: $shade-0; border-radius: 4px;}.request{margin-right: 20px;}}
+
+.request:hover{background-color: $primary-700; transition: 0.4s all;}
+
+.price:hover{background-color: $primary-600; border: none; transition: 0.4s all;}
 
 .service{padding-top: 80px; padding-bottom: 80px;}
 
@@ -53,13 +59,92 @@ main{margin-top: 74px + 36px;}
 
 .card-body{background-color: $primary-50;  border-bottom: 4px solid $primary-300; padding: 20px; h4{@include h4-small; font-weight: 700; color: $neutral-900; padding: 20px 0px;} p{@include p3; font-weight: 400; color: $primary-800; padding-bottom: 20px;} a{@include p1; font-weight: 700; color: $primary-800;}}
 
+.card-body:hover{background-color: $primary-500; h4,p,a{color: $shade-0;} img{filter: brightness(0) invert(1);}}
 
+.about-us{padding: 104.5px 0px;}
 
+.square{width: 442px; height: 456px; background-color: $primary-500; img{ margin: -14px 24px 24px -14px;}}
 
+.about-right{gap: 40px; h1{@include h1-small; font-weight: 700; color: $primary-800; margin-bottom: 0px;} p{@include p1; font-weight: 400; color: $primary-800; padding: 40px 0; margin-bottom: 0px;} li{@include p1; font-weight: 600; color: $primary-800; padding-bottom: 10px; img{padding-right: 12px;}} button{@include mybtn; @include p2; font-weight: 700; padding: 20px 28px; margin-top: 30px; img{padding-left: 10px;}} button:hover{background-color: $primary-700; transition: 0.4s all;} ul{padding-left: 0px;} }
 
+.price-plan{padding: 100px 0px; background-color: $primary-50;}
 
+.plan-text{
+    h5{@include h5; font-weight: 600; color: $primary-500; padding-bottom: 20px; margin-bottom: 0px;}
 
+    h1{@include h1; font-weight: 700; color: $primary-800; padding-bottom: 20px; margin-bottom: 0px;}
+}
 
+.plan-row{gap: 40px;}
+
+.plan-card{background-color: $shade-0; width: 370px; padding: 40px 20px 60px 20px; border-radius: 4px;
+
+    h4{@include h4; font-weight: 700; color: $primary-800; margin-bottom: 0px;}
+
+    h1{@include h1; font-weight: 700; color: $primary-500; padding: 40px 0; margin-bottom: 0px;}
+
+    span{@include p1; font-weight: 700; color: $primary-800;}
+
+    ul{padding-left: 0px;}
+
+    li{@include p3; font-weight: 400; color: $primary-800; padding-bottom: 26px;}
+
+    img{padding-right: 10px;}
+
+    button{@include p2; padding: 16px 12px; color: $primary-800; border-radius: 4px; border: 1px solid $primary-500; background-color: $shade-0; font-weight: 700; margin-top: 30px;}
+}
+
+.plan-card:hover{border-top: 6px solid $primary-500; border-bottom: 6px solid $primary-500; transition: 0.3s all; button{@include mybtn; transition: 0.4s all;}}
+
+.recent-work{padding: 100px 0;}
+
+.recent-work-ul{overflow-x: scroll;}
+
+.recent-work-text{h5{@include h5; font-weight: 600; color: $primary-500; margin-bottom: 0px; padding-bottom: 20px;} h1{@include h1-small; font-weight: 700; color: $primary-800; margin-bottom: 0px; padding-bottom: 28px;} ul{padding-left: 0px; margin-bottom: 0px; padding-bottom: 28px;} a{@include h4-small; font-weight: 400; color: $primary-800; padding: 10px;} a:hover{font-weight: 700; border-bottom: 2px solid $primary-500;}}
+
+.recent-work-img{position: relative;}
+
+.image{
+    padding-bottom: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .recent-work-img:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    h4{
+        @include h4;
+        font-weight: 700;
+        border-bottom: 3px solid $shade-0;
+    }
+    p{
+        @include p3;
+        font-weight: 600;
+    }
+  }
+
+.service-year{padding: 60px 0; background-color: $primary-50; }
+
+.service-year-text{@include h2; font-weight: 700; color: $primary-500; padding-bottom: 20px; margin-bottom: 0px;}
+
+.content-text{padding: 8px; h2{@include h2-small; font-weight: 700; color: $primary-800;} span{color: $primary-500;} p{@include p2; font-weight: 600; color: $primary-800; margin-bottom: 0px;}}
 
 @media (min-width:320px) and (max-width:767px){
     .top-nav{display: none;}
@@ -68,5 +153,12 @@ main{margin-top: 74px + 36px;}
 }
 
 @media(min-width:768px) and (max-width:991px){
+    .container{max-width: 768px;}
+    .hero-section{text-align: center; padding-top: 100px;}
+    .left{
 
+        h1{@include h1-small; font-weight: 700;}
+    }
+    .service-card{width: 340px;}
+    .plan-card{padding: 0px;}
 }
