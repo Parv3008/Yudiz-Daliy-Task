@@ -1,0 +1,72 @@
+@import "_color";
+@import "_mixin";
+
+*{margin: 0; padding: 0; box-sizing: border-box;font-family: "Inter", sans-serif;}
+
+html , body{height: 100%;width: 100%; }
+
+.container{max-width: 1280px !important;}
+
+img{max-width: 100%; height: auto;}
+
+a{text-decoration: none;}
+
+h1,h2,h3,h4,h5{font-family: "Manrope", sans-serif;}
+
+button:hover{background-color: $primary-700;}
+
+.navbar{position: fixed; top: 0; z-index: 1000; width: 100%; background-color: $shade-0; padding: 16px 0; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); margin-top: 36px;}
+
+.top-nav{position: fixed; top: 0; z-index: 1000; width: 100%; height: 36px; padding-top: 5px; background-color: $primary-900; color: $shade-0; a{color: $shade-0;font-size: 12px;} p{@include p4; margin-bottom: 0px;}}
+
+.nav-info{gap: 36px;}
+
+.nav-link{color: $primary-900; font-size: 14px; font-weight: 600;}
+
+.call-btn{@include mybtn; padding: 14px 32px; font-size: 16px; font-weight: 700;}
+
+.navbar-nav{a{font-weight: 600; font-size: 14px;} a:hover{color: $primary-500}}
+
+.dropdown-toggle::after {display: none;}
+
+.navbar-toggler-icon {background-image: url("/assest/img/menu-icon.svg");}
+
+.navbar-toggler:hover {background-color: $shade-0;}
+
+main{margin-top: 74px + 36px;}
+
+.hero-section{background-image: url("B:/Yudiz/HTML and CSS/HouseFix/assest/img/hero-bg.jpeg");background-repeat: no-repeat; background-size: cover;}
+
+.left{h1{@include h1; font-weight: 800; color: $shade-0;padding-bottom: 40px;} p{@include p1; font-weight: 400; color: $shade-0; padding-bottom: 40px;}.request{@include mybtn; @include p1; padding: 20px 40px; font-weight: 700;} .price{@include p1; padding: 20px 40px; font-weight: 700; border: 2px solid $primary-500; background-color: transparent; color: $shade-0; border-radius: 4px;}.request{margin-right: 20px;}}
+
+.service{padding-top: 80px; padding-bottom: 80px;}
+
+.service-text{a{@include h5; font-weight: 600; color: $primary-500;} h1{@include h1-small; font-weight: 700; color: $primary-800;}}
+
+.service-text{h1{padding-top: 20px; padding-bottom: 40px;}}
+
+.service-card{padding: 0 0; width: 368px;}
+
+.card-row{gap: 24px;}
+
+.service-card{padding: 0 0; width: 368px;}
+
+.card-body{background-color: $primary-50;  border-bottom: 4px solid $primary-300; padding: 20px; h4{@include h4-small; font-weight: 700; color: $neutral-900; padding: 20px 0px;} p{@include p3; font-weight: 400; color: $primary-800; padding-bottom: 20px;} a{@include p1; font-weight: 700; color: $primary-800;}}
+
+
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:767px){
+    .top-nav{display: none;}
+    .navbar{margin-top: 0px;}
+    main{margin-top: 74px;}
+}
+
+@media(min-width:768px) and (max-width:991px){
+
+}
