@@ -45,17 +45,11 @@ main{margin-top: 74px + 36px;}
 
 .price:hover{background-color: $primary-600; border: none; transition: 0.4s all;}
 
-.service{padding-top: 80px; padding-bottom: 80px;}
+.service{padding-top: 80px; padding-bottom: 56px;}
 
-.service-text{a{@include h5; font-weight: 600; color: $primary-500;} h1{@include h1-small; font-weight: 700; color: $primary-800;}}
+.service-text{a{@include h5; font-weight: 600; color: $primary-500;} h1{@include h1-small; font-weight: 700; color: $primary-800; padding-top: 20px; padding-bottom: 40px;}}
 
-.service-text{h1{padding-top: 20px; padding-bottom: 40px;}}
-
-.service-card{padding: 0 0; width: 368px;}
-
-.card-row{gap: 24px;}
-
-.service-card{padding: 0 0; width: 368px;}
+.service-card{ margin-bottom: 24px; }
 
 .card-body{background-color: $primary-50;  border-bottom: 4px solid $primary-300; padding: 20px; h4{@include h4-small; font-weight: 700; color: $neutral-900; padding: 20px 0px;} p{@include p3; font-weight: 400; color: $primary-800; padding-bottom: 20px;} a{@include p1; font-weight: 700; color: $primary-800;}}
 
@@ -75,9 +69,7 @@ main{margin-top: 74px + 36px;}
     h1{@include h1; font-weight: 700; color: $primary-800; padding-bottom: 20px; margin-bottom: 0px;}
 }
 
-.plan-row{gap: 40px;}
-
-.plan-card{background-color: $shade-0; width: 370px; padding: 40px 20px 60px 20px; border-radius: 4px;
+.plan-card{background-color: $shade-0; padding: 40px 20px 60px 20px; border-radius: 4px;
 
     h4{@include h4; font-weight: 700; color: $primary-800; margin-bottom: 0px;}
 
@@ -98,11 +90,9 @@ main{margin-top: 74px + 36px;}
 
 .recent-work{padding: 100px 0;}
 
-.recent-work-ul{overflow-x: scroll;}
-
 .recent-work-text{h5{@include h5; font-weight: 600; color: $primary-500; margin-bottom: 0px; padding-bottom: 20px;} h1{@include h1-small; font-weight: 700; color: $primary-800; margin-bottom: 0px; padding-bottom: 28px;} ul{padding-left: 0px; margin-bottom: 0px; padding-bottom: 28px;} a{@include h4-small; font-weight: 400; color: $primary-800; padding: 10px;} a:hover{font-weight: 700; border-bottom: 2px solid $primary-500;}}
 
-.recent-work-img{position: relative;}
+.recent-work-img{position: relative; padding-bottom: 10px;}
 
 .image{
     padding-bottom: 10px;
@@ -121,13 +111,6 @@ main{margin-top: 74px + 36px;}
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
-
-  .recent-work-img:hover .middle {
-    opacity: 1;
-  }
-  
-  .text {
     color: white;
     h4{
         @include h4;
@@ -140,6 +123,10 @@ main{margin-top: 74px + 36px;}
     }
   }
 
+  .recent-work-img:hover .middle {
+    opacity: 1;
+  }
+  
 .service-year{padding: 60px 0; background-color: $primary-50; }
 
 .service-year-text{@include h2; font-weight: 700; color: $primary-500; padding-bottom: 20px; margin-bottom: 0px;}
@@ -159,6 +146,4 @@ main{margin-top: 74px + 36px;}
 
         h1{@include h1-small; font-weight: 700;}
     }
-    .service-card{width: 340px;}
-    .plan-card{padding: 0px;}
 }

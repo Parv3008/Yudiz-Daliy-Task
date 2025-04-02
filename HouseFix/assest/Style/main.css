@@ -171,7 +171,7 @@ main {
 
 .service {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 56px;
 }
 
 .service-text a {
@@ -185,25 +185,12 @@ main {
   line-height: 48px;
   font-weight: 700;
   color: #00296C;
-}
-
-.service-text h1 {
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
 .service-card {
-  padding: 0 0;
-  width: 368px;
-}
-
-.card-row {
-  gap: 24px;
-}
-
-.service-card {
-  padding: 0 0;
-  width: 368px;
+  margin-bottom: 24px;
 }
 
 .card-body {
@@ -328,13 +315,8 @@ main {
   margin-bottom: 0px;
 }
 
-.plan-row {
-  gap: 40px;
-}
-
 .plan-card {
   background-color: #FFFFFF;
-  width: 370px;
   padding: 40px 20px 60px 20px;
   border-radius: 4px;
 }
@@ -402,10 +384,6 @@ main {
   padding: 100px 0;
 }
 
-.recent-work-ul {
-  overflow-x: scroll;
-}
-
 .recent-work-text h5 {
   font-size: 18px;
   line-height: 23px;
@@ -441,6 +419,7 @@ main {
 
 .recent-work-img {
   position: relative;
+  padding-bottom: 10px;
 }
 
 .image {
@@ -460,25 +439,22 @@ main {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.recent-work-img:hover .middle {
-  opacity: 1;
-}
-
-.text {
   color: white;
 }
-.text h4 {
+.middle h4 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   border-bottom: 3px solid #FFFFFF;
 }
-.text p {
+.middle p {
   font-size: 14px;
   line-height: 18px;
   font-weight: 600;
+}
+
+.recent-work-img:hover .middle {
+  opacity: 1;
 }
 
 .service-year {
@@ -538,11 +514,5 @@ main {
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
-  }
-  .service-card {
-    width: 340px;
-  }
-  .plan-card {
-    padding: 0px;
   }
 }/*# sourceMappingURL=main.css.map */
