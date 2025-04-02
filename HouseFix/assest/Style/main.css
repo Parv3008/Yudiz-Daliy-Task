@@ -244,8 +244,8 @@ main {
 }
 
 .square {
-  width: 442px;
-  height: 456px;
+  max-width: 442px;
+  max-height: 456px;
   background-color: #2196F3;
 }
 .square img {
@@ -500,6 +500,10 @@ main {
   margin-bottom: 0px;
 }
 
+.service-content {
+  padding: 4px;
+}
+
 .testimonial {
   padding: 100px 0;
 }
@@ -702,9 +706,8 @@ main {
   line-height: 23px;
   font-weight: 600;
 }
-.footer-ul span {
-  font-size: 18px;
-  line-height: 23px;
+.footer-ul .footer-contact {
+  padding-bottom: 70px;
 }
 
 .footer-news {
@@ -743,8 +746,6 @@ main {
 
 .footer-logo {
   gap: 29px;
-  padding-top: 35px;
-  padding-bottom: 40px;
 }
 
 .footer-copyright p {
@@ -773,6 +774,92 @@ main {
   main {
     margin-top: 74px;
   }
+  .hero-section {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .left h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .left p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .left .request {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .left .price {
+    width: 70%;
+  }
+  .service-text h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .about-right h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .about-right p {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+  }
+  .plan-text h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .pricing-card {
+    margin-bottom: 40px;
+  }
+  .recent-work-text h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .service-year-text {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  .testimonial-text h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .blog-text h1 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+  .blog-img {
+    width: 100%;
+  }
+  .footer-headline {
+    flex-wrap: wrap;
+  }
+  .footer-headline h1 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  .footer-row {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .footer-ul .footer-contact {
+    padding-bottom: 32px;
+  }
+  .footer-logo {
+    padding-bottom: 40px;
+  }
+  .Navigation {
+    padding-bottom: 40px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-section {
@@ -783,5 +870,32 @@ main {
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
+  }
+  .pricing-card {
+    margin-bottom: 40px;
+  }
+  .plan-text h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .service-year-text {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .footer-headline {
+    flex-wrap: wrap;
+  }
+  .footer-row {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .footer-ul .footer-contact {
+    padding-bottom: 32px;
+  }
+  .footer-logo {
+    padding-bottom: 40px;
+  }
+  .Navigation {
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=main.css.map */

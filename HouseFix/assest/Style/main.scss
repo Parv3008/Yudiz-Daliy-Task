@@ -61,7 +61,7 @@ main{margin-top: 74px + 36px;}
 
 .about-us{padding: 104.5px 0px;}
 
-.square{width: 442px; height: 456px; background-color: $primary-500; img{ margin: -14px 24px 24px -14px;}}
+.square{max-width: 442px; max-height: 456px; background-color: $primary-500; img{ margin: -14px 24px 24px -14px;}}
 
 .about-right{gap: 40px; h1{@include h1-small; font-weight: 700; color: $primary-800; margin-bottom: 0px;} p{@include p1; font-weight: 400; color: $primary-800; padding: 40px 0; margin-bottom: 0px;} li{@include p1; font-weight: 600; color: $primary-800; padding-bottom: 10px; img{padding-right: 12px;}} button{@include mybtn; @include p2; font-weight: 700; padding: 20px 28px; margin-top: 30px; img{padding-left: 10px;}} button:hover{background-color: $primary-700; transition: 0.4s all;} ul{padding-left: 0px;} }
 
@@ -136,6 +136,8 @@ main{margin-top: 74px + 36px;}
 
 .content-text{padding: 8px; h2{@include h2-small; font-weight: 700; color: $primary-800;} span{color: $primary-500;} p{@include p2; font-weight: 600; color: $primary-800; margin-bottom: 0px;}}
 
+.service-content{padding: 4px;}
+
 .testimonial{padding: 100px 0;}
 
 .testimonial-text{h4{@include h4-small; font-weight: 600; color: $primary-500; margin-bottom: 0px; padding-bottom: 20px;} h1{@include h1-small; font-weight: 700; color: $primary-800;}}
@@ -190,8 +192,8 @@ main{margin-top: 74px + 36px;}
         @include p1;
         font-weight: 600;
     }
-    span{
-        @include p1;
+    .footer-contact{
+        padding-bottom: 70px;
     }
 }
 
@@ -222,7 +224,7 @@ main{margin-top: 74px + 36px;}
     }
 }
 
-.footer-logo{gap: 29px; padding-top: 35px; padding-bottom: 40px;}
+.footer-logo{gap: 29px;}
 
 .footer-copyright{
     p{
@@ -244,11 +246,121 @@ main{margin-top: 74px + 36px;}
     .top-nav{display: none;}
     .navbar{margin-top: 0px;}
     main{margin-top: 74px;}
+    .hero-section{text-align: center; padding-top: 40px;}
+    .left{
+        h1{@include h2-small; font-weight: 700;}
+        p{@include p2;}
+        .request{
+            margin-bottom: 12px;
+            width: 100%;
+        }
+        .price{
+            width: 70%;
+        }
+    }
+    .service-text{
+        h1{
+            @include h2-small;
+            font-weight: 700;  
+        }
+    }
+    .about-right{
+        h1{
+            @include h2-small;
+            font-weight: 700;
+        }
+        p{
+            @include p2;
+            font-weight: 400;
+        }
+    }
+    .plan-text{
+        h1{
+            @include h2-small;
+        }
+    }
+    .pricing-card{
+        margin-bottom: 40px;
+    }
+    .recent-work-text{
+        h5{@include h4-small;}
+    }
+    .service-year-text{
+        @include h2-small;
+        font-weight: 600;
+    }
+    .testimonial-text{
+        h1{
+            @include h2-small;
+            font-weight: 700;
+        }
+    }
+    .blog-text{
+        h1{
+            @include h2-small;
+            font-weight: 700;
+        }
+    }
+    .blog-img{
+        width: 100%;
+    }
+    .footer-headline{
+        flex-wrap: wrap;
+        h1{
+            @include h2;
+            font-weight: 700;
+            padding-bottom: 40px;
+        }
+    }
+    .footer-row{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .footer-ul{
+    .footer-contact{
+        padding-bottom: 32px;
+        }
+    }
+    .footer-logo{
+        padding-bottom: 40px;
+    }
+    .Navigation{
+        padding-bottom: 40px;
+    }
 }
 
 @media(min-width:768px) and (max-width:991px){
     .hero-section{text-align: center; padding-top: 100px;}
     .left{
         h1{@include h1-small; font-weight: 700;}
+    }
+    .pricing-card{
+        margin-bottom: 40px;
+    }
+    .plan-text{
+        h1{
+            @include h1-small
+        }
+    }
+    .service-year-text{
+        @include h1-small;
+    }
+    .footer-headline{
+        flex-wrap: wrap;
+    }
+    .footer-row{
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .footer-ul{
+    .footer-contact{
+        padding-bottom: 32px;
+        }
+    }
+    .footer-logo{
+        padding-bottom: 40px;
+    }
+    .Navigation{
+        padding-bottom: 40px;
     }
 }
