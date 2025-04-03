@@ -104,18 +104,13 @@ button:hover {
   display: none;
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
-}
-
 .navbar-toggler-icon {
   background-image: url("/assest/img/menu-icon.svg");
 }
 
 .navbar-toggler:hover {
   background-color: #FFFFFF;
-  transition: 0.4s all;
+  transition: 0.4s ease;
 }
 
 main {
@@ -126,8 +121,12 @@ main {
   background-image: url("../img/hero-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
 }
 
+.left {
+  padding: 202px 0px;
+}
 .left h1 {
   font-size: 48px;
   line-height: 58px;
@@ -228,14 +227,14 @@ main {
   color: #00296C;
 }
 
-.card-body:hover {
+.service-card:hover .card-body {
   background-color: #2196F3;
-  border: none;
+  border-bottom: 4px solid #2196F3;
 }
-.card-body:hover h4, .card-body:hover p, .card-body:hover a {
+.service-card:hover .card-body h4, .service-card:hover .card-body p, .service-card:hover .card-body a {
   color: #FFFFFF;
 }
-.card-body:hover img {
+.service-card:hover .card-body img {
   filter: brightness(0) invert(1);
 }
 
@@ -377,9 +376,10 @@ main {
 }
 
 .plan-card:hover {
+  margin-top: -6px;
+  margin-bottom: -6px;
   border-top: 6px solid #2196F3;
   border-bottom: 6px solid #2196F3;
-  transition: 0.3s all;
 }
 .plan-card:hover button {
   cursor: pointer;
@@ -387,7 +387,6 @@ main {
   background-color: #2196F3;
   color: #FFFFFF;
   border: none;
-  transition: 0.4s all;
 }
 
 .recent-work {
@@ -591,6 +590,7 @@ main {
   line-height: 23px;
   font-weight: 400;
   color: #00296C;
+  padding-bottom: 40px;
 }
 
 .blog-card {
@@ -646,6 +646,9 @@ main {
   font-weight: 700;
   color: #2196F3;
 }
+.blog-card-text a img {
+  padding-left: 10px;
+}
 
 .blog-btn button {
   cursor: pointer;
@@ -657,6 +660,14 @@ main {
   line-height: 23px;
   padding: 20px 40px;
   font-weight: 700;
+}
+.blog-btn button img {
+  padding-left: 12px;
+}
+
+.blog-btn-hover:hover {
+  background-color: #0045B4;
+  transition: 0.4s ease;
 }
 
 .footer {
@@ -674,12 +685,16 @@ main {
 .footer-headline button {
   cursor: pointer;
   border-radius: 4px;
-  background-color: #2196F3;
-  color: #FFFFFF;
-  border: none;
   background-color: #F42C38;
   padding: 19px 40px;
   font-weight: 700;
+  border: none;
+  color: #FFFFFF;
+}
+
+.footer-headline-btn:hover {
+  background-color: #AB0913;
+  transition: 0.4s ease;
 }
 
 .footer-line {
@@ -708,6 +723,9 @@ main {
 }
 .footer-ul .footer-contact {
   padding-bottom: 70px;
+}
+.footer-ul ul li a img {
+  padding-right: 10px;
 }
 
 .footer-news {
@@ -742,6 +760,11 @@ main {
   font-weight: 700;
   padding: 14px 32px;
   width: 100%;
+}
+
+.footer-sub:hover {
+  background-color: #0045B4;
+  transition: 0.4s ease;
 }
 
 .footer-logo {
@@ -897,5 +920,11 @@ main {
   }
   .Navigation {
     padding-bottom: 40px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1800px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
   }
 }/*# sourceMappingURL=main.css.map */
