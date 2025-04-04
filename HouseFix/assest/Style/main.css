@@ -212,6 +212,7 @@ main {
 
 .service-card {
   margin-bottom: 24px;
+  border: none;
 }
 
 .card-body {
@@ -338,6 +339,10 @@ main {
   margin-bottom: 0px;
 }
 
+.pricing-card {
+  border: none;
+}
+
 .plan-card {
   background-color: #FFFFFF;
   padding: 40px 20px 60px 20px;
@@ -439,6 +444,10 @@ main {
 }
 .recent-work-text a:hover {
   font-weight: 700;
+  border-bottom: 2px solid #2196F3;
+  transition: 0.3s all;
+}
+.recent-work-text .nav-tabs .nav-link:hover {
   border-bottom: 2px solid #2196F3;
   transition: 0.3s all;
 }
@@ -773,6 +782,10 @@ main {
   border-radius: 3px;
   padding: 14px 16px;
   margin-bottom: 15px;
+}
+.footer-news .email:active {
+  border: 1px solid #0060FC;
+  background-color: #FFFFFF;
 }
 .footer-news button {
   cursor: pointer;
