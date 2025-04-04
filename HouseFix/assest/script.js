@@ -1,3 +1,20 @@
+let lastScrollY = 0;
+window.addEventListener("scroll", function () {
+    const topNav = document.querySelector(".top-nav");
+    const navbar = document.querySelector(".navbar");
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 50) {
+        topNav.classList.add("hidden");
+        navbar.classList.add("sticky");
+    } else {
+        topNav.classList.remove("hidden");
+        navbar.classList.remove("sticky");
+    }
+
+    lastScrollY = currentScrollY;
+});
+
 const services = [
   {
     id: 1,
@@ -132,60 +149,60 @@ const plans = price
 
 priceplan.innerHTML = plans;
 
-const recentwork = [
-  {
-    id: 1,
-    img: "assest/img/recent-work1.jpg",
-    title: "Water Line Repair",
-    subtitle: "Plumbing",
-  },
-  {
-    id: 2,
-    img: "assest/img/recent-work2.jpg",
-    title: "Water Line Repair",
-    subtitle: "Plumbing",
-  },
-  {
-    id: 3,
-    img: "assest/img/recent-work3.jpg",
-    title: "Water Line Repair",
-    subtitle: "Plumbing",
-  },
-  {
-    id: 4,
-    img: "assest/img/recent-work4.jpg",
-    title: "Water Line Repair",
-    subtitle: "Plumbing",
-  },
-  {
-    id: 5,
-    img: "assest/img/recent-work5.jpg",
-    title: "Water Line Repair",
-    subtitle: "Plumbing",
-  },
-  {
-    id: 6,
-    img: "assest/img/recent-work6.jpg",
-    title: "Water Line Repair",
-    subtitle: "Plumbing",
-  },
-];
+// const recentwork = [
+//   {
+//     id: 1,
+//     img: "assest/img/recent-work1.jpg",
+//     title: "Water Line Repair",
+//     subtitle: "Plumbing",
+//   },
+//   {
+//     id: 2,
+//     img: "assest/img/recent-work2.jpg",
+//     title: "Water Line Repair",
+//     subtitle: "Plumbing",
+//   },
+//   {
+//     id: 3,
+//     img: "assest/img/recent-work3.jpg",
+//     title: "Water Line Repair",
+//     subtitle: "Plumbing",
+//   },
+//   {
+//     id: 4,
+//     img: "assest/img/recent-work4.jpg",
+//     title: "Water Line Repair",
+//     subtitle: "Plumbing",
+//   },
+//   {
+//     id: 5,
+//     img: "assest/img/recent-work5.jpg",
+//     title: "Water Line Repair",
+//     subtitle: "Plumbing",
+//   },
+//   {
+//     id: 6,
+//     img: "assest/img/recent-work6.jpg",
+//     title: "Water Line Repair",
+//     subtitle: "Plumbing",
+//   },
+// ];
 
-const recent = document.getElementsByClassName("recent-work-row")[0];
-const work = recentwork
-  .map(
-    (item) =>
-      `<div class="col-md-4 col-sm-12 recent-work-img">
-                        <img src="${item.img}" alt="">
-                        <div class="middle">
-                            <h4 class="text">${item.title}</h4>
-                            <p class="">${item.subtitle}</p>
-                        </div>
-                    </div>`
-  )
-  .join("");
+// const recent = document.getElementsByClassName("recent-work-row")[0];
+// const work = recentwork
+//   .map(
+//     (item) =>
+//       `<div class="col-md-4 col-sm-12 recent-work-img">
+//                         <img src="${item.img}" alt="">
+//                         <div class="middle">
+//                             <h4 class="text">${item.title}</h4>
+//                             <p class="">${item.subtitle}</p>
+//                         </div>
+//                     </div>`
+//   )
+//   .join("");
 
-recent.innerHTML = work;
+// recent.innerHTML = work;
 
 const service_year = [
   {
@@ -198,19 +215,19 @@ const service_year = [
     id: 2,
     img: "assest/img/service-year2.svg",
     numbers: "8714",
-    text: "Installed Units",
+    text: "Happy Customers",
   },
   {
     id: 3,
     img: "assest/img/service-year3.svg",
     numbers: "1500",
-    text: "Home Served",
+    text: "Happy Customers",
   },
   {
     id: 4,
     img: "assest/img/service-year4.svg",
     numbers: "500",
-    text: "Professional",
+    text: "Happy Customers",
   },
 ];
 
@@ -218,7 +235,7 @@ const year = document.getElementsByClassName("service-year-row")[0];
 const service_container = service_year
   .map(
     (item) =>
-      `<div class="service-content col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
+      `<div class="service-content col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
                         <div class="content-img">
                             <img src="${item.img}" alt="">
                         </div>
@@ -247,7 +264,7 @@ const testimoial = [
       "Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus ut maecenas interdum. Euismod egestas scelerisque.",
     img: "assest/img/client-img2.jpg",
     name: "Wade Warren",
-    post: "Marketing Coordinator",
+    post: "Hotel Manager",
   },
   {
     id: 3,
@@ -271,7 +288,7 @@ const testimoial = [
       "Lorem ipsum dolor sit amet consectetur. Pretium malesuada pulvinar sed feugiat sem est nisl pharetra. Facilisis ridiculus amet commodo aliquet a phasellus malesuada. Ac id quam mattis neque. Urna tellus ut maecenas interdum. Euismod egestas scelerisque.",
     img: "assest/img/client-img2.jpg",
     name: "Wade Warren",
-    post: "Marketing Coordinator",
+    post: "Hotel Manager",
   },
   {
     id: 6,
@@ -359,13 +376,13 @@ const blog_container = blog
       `<div class="col-lg-6 col-md-12">
                         <div class="blog-card">
                             <div class="row g-0">
-                                <div class="col-md-6 col-sm-12">
-                                    <img src="${item.img1}" alt="" class="blog-img">
+                                <div class="col-md-5 col-sm-12">
+                                    <img src="${item.img1}" alt="" class="blog-img h-100 w-100">
                                     <div class="blog-img-text text-center">
                                         <p>Tips & Tricks</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-12">
+                                <div class="col-md-7 col-sm-12">
                                     <div class="blog-card-text">
                                         <h4>${item.title}</h4>
                                         <span><img src="${item.img2}" alt=""> ${item.date}</span>
